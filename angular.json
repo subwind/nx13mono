@@ -1,7 +1,13 @@
 {
   "version": 2,
   "projects": {
+    "admin": "apps/admin",
+    "admin-e2e": "apps/admin-e2e",
+    "common-ui": "libs/common-ui",
     "mono-one": "apps/mono-one",
-    "mono-one-e2e": "apps/mono-one-e2e"
+    "mono-one-e2e": "apps/mono-one-e2e",
+    "products": "libs/products",
+    "store": "apps/store",
+    "store-e2e": "apps/store-e2e"
   }
 }

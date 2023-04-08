@@ -1,0 +1,7 @@
+<!-- <nx13mono-nx-welcome></nx13mono-nx-welcome> <router-outlet></router-outlet> -->
+<nx13mono-banner title="Welcome to the store!"> </nx13mono-banner>
+    <ul>
+      <li *ngFor="let product of products">
+        <strong>{{ product.name }}</strong> Price: {{ product.price }}
+      </li>
+    </ul>
