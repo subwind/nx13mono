@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "mono-one": "apps/mono-one",
+    "mono-one-e2e": "apps/mono-one-e2e"
+  }
+}

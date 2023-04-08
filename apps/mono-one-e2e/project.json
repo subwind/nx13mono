@@ -1,0 +1,28 @@
+{
+  "root": "apps/mono-one-e2e",
+  "sourceRoot": "apps/mono-one-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/mono-one-e2e/cypress.json",
+        "devServerTarget": "mono-one:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "mono-one:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mono-one-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["mono-one"]
+}
